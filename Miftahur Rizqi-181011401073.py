@@ -3,7 +3,7 @@ from nltk.stem import PorterStemmer
 
 porter = PorterStemmer()
 
-tkns = ['study','studying','studies','studied']
+tks = ['study','studying','studies','studied']
 
 for token in tkns:
     print(token + " : " + porter.stem(token))
@@ -15,7 +15,7 @@ from nltk.stem import SnowballStemmer
 
 snowball = SnowballStemmer(language='english')
 
-for token in tkns:
+for token in tks:
     print(token + " : " + snowball.stem(token))
 study : studi
 studying : studi
@@ -25,7 +25,7 @@ from nltk.stem import LancasterStemmer
 
 lancaster = LancasterStemmer()
 
-for token in tkns:
+for token in tks:
     print(token + " : " + lancaster.stem(token))
 study : study
 studying : study
@@ -39,7 +39,7 @@ from nltk.stem import WordNetLemmatizer
 
 lemmatizer = WordNetLemmatizer()
 
-for token in tkns:
+for token in tks:
     print(token + " :  " + lemmatizer.lemmatize(token))
 study :  study
 studying :  studying
@@ -52,7 +52,7 @@ porter = PorterStemmer()
 
 tkns = ['player','players','plays','playing','played']
 
-for token in tkns:
+for token in tks:
     print(token + " : " + porter.stem(token))
 player : player
 players : player
@@ -89,7 +89,7 @@ from nltk.stem import WordNetLemmatizer
 
 lemmatizer = WordNetLemmatizer()
 
-for token in tkns:
+for token in tks:
     print(token + " : " + lemmatizer.lemmatize(token))
 player : player
 players : player
